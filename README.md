@@ -10,7 +10,17 @@ Prototipo de apoyo para una **evaluación preliminar de la complejidad jurídico
 El nombre del campo de respuesta, `riesgo_identificado`, se conserva por compatibilidad con el código actual; conceptualmente, el proyecto busca aproximar la **complejidad jurídico-regulatoria**, no calcular una probabilidad de incumplimiento.
 
 ## 2. Arquitectura y tecnologías
+### Experimentación inicial en Amazon SageMaker
 
+Como parte del desarrollo del proyecto se realizó una etapa de experimentación en Amazon SageMaker Studio, utilizando un notebook de Python para preparar ejemplos de proyectos bancarios, entrenar un modelo de clasificación de temas regulatorios y visualizar sus resultados mediante una matriz de confusión.
+
+Esta etapa permitió explorar el uso de técnicas de procesamiento de lenguaje natural y aprendizaje automático para identificar materias jurídicas asociadas a iniciativas de banca digital.
+
+Posteriormente, para la ejecución local de la Fase II, se desarrolló un clasificador simplificado orientado a estimar niveles de complejidad jurídico-regulatoria, integrado mediante FastAPI y Docker.
+
+Ambos desarrollos se documentan como etapas relacionadas del proyecto, aunque sus categorías de clasificación son diferentes.
+
+**Notebook de experimentación:** [Consultar código y resultados en SageMaker](notebooks/fase2_asistente_regulatorio.ipynb).
 ```text
 Usuario / Swagger UI
         |

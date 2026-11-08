@@ -56,6 +56,8 @@ asistente-regulatorio/
 ├── requirements.txt
 ├── entrenar_modelo.py
 ├── modelo_regulatorio.pkl
+├── notebooks/
+│   └── fase2_asistente_regulatorio.ipynb
 └── Evidencias/
     ├── Evidencia 1.png
     ├── Evidencia 2.png

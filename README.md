@@ -320,6 +320,12 @@ Para un despliegue productivo se requerirían, entre otros controles, autenticac
 - [Google Cloud Run: autenticación de usuarios y servicios](https://cloud.google.com/run/docs/authenticating/overview)
 - [Google Cloud SDK: instalación](https://cloud.google.com/sdk/docs/install)
 
+### 9.9 Herramientas de apoyo para la documentación
+
+Para la elaboración de la documentación técnica se utilizó ChatGPT como herramienta de apoyo para estructurar las instrucciones de ejecución local, organizar el procedimiento propuesto de despliegue en Google Cloud Run y mejorar la claridad del manual.
+
+El contenido se contrastó con la documentación oficial de Google Cloud. Las pruebas funcionales y la ejecución del contenedor se realizaron en el entorno local; el despliegue en la nube se presenta como una propuesta documentada, no como una implementación ejecutada.
+
 ## 10. Conclusiones
 
 La Fase II permitió construir y ejecutar localmente un contenedor Docker, exponer una API con FastAPI y efectuar pruebas manuales con diferentes escenarios bancarios. La integración técnica funcionó en las pruebas realizadas. Al mismo tiempo, las discrepancias identificadas muestran que **un servicio técnicamente operativo no implica un modelo suficientemente validado para decisiones jurídicas**. La siguiente fase deberá priorizar la calidad de datos, la definición de criterios de clasificación, la evaluación cuantitativa y la supervisión humana.

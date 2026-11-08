@@ -200,8 +200,7 @@ Las capturas de las pruebas manuales y de la ejecución local se encuentran en l
 | 8 | Contenedor activo con puerto 8000 publicado | [Contenedor en ejecución](Evidencias/08_contenedor_ejecucion.png) |
 | 9 | Swagger mostrando `GET /` y `POST /evaluar` | [Integración API](Evidencias/09_integracion_api_swagger.png) |
 
-Las seis capturas de pruebas documentan parte de las ejecuciones realizadas; la matriz recoge los siete escenarios evaluados y sus resultados reportados.
-
+Durante la validación se ejecutaron siete escenarios, cuyos resultados se presentan en la matriz del apartado 7. Se incorporan seis capturas como evidencia visual de las pruebas realizadas, complementadas con tres evidencias técnicas de Docker y la integración de la API.
 ## 9. Manual de despliegue en la nube: Google Cloud Run
 
 ### 9.1 Estrategia

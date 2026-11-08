@@ -34,7 +34,7 @@ Aplicación y modelo empaquetados en Docker
 - **Docker** para construir y ejecutar el servicio de manera reproducible.
 - **pandas** y **uvicorn** como dependencias declaradas en `requirements.txt`.
 
-> El repositorio debe incluir el archivo binario `modelo_regulatorio.pkl`. El código de entrenamiento (`entrenar_modelo.py`), si se incorpora, permite documentar la procedencia del modelo, pero el contenedor necesita el archivo `.pkl` ya generado.
+El repositorio incluye `modelo_regulatorio.pkl`, utilizado por la API, y `entrenar_modelo.py`, que documenta el entrenamiento del clasificador.
 
 ## 3. Estructura del repositorio
 
@@ -44,16 +44,19 @@ asistente-regulatorio/
 ├── app.py
 ├── Dockerfile
 ├── requirements.txt
-├── entrenar_modelo.py        # si se incluye el script utilizado
-├── modelo_regulatorio.pkl    # necesario para ejecutar el servicio
+├── entrenar_modelo.py
+├── modelo_regulatorio.pkl
 └── Evidencias/
-    ├── Evidencia 1 ... 6     # capturas de pruebas; conservar extensiones reales
+    ├── Evidencia 1.png
+    ├── Evidencia 2.png
+    ├── Evidencia 3.png
+    ├── Evidencia 4.png
+    ├── Evidencia 5.png
+    ├── Evidencia 6.png
     ├── 07_imagen_docker.png
     ├── 08_contenedor_ejecucion.png
     └── 09_integracion_api_swagger.png
 ```
-
-**Nota:** Los nombres de las primeras seis imágenes son orientativos. Antes de publicar, comprobar sus nombres y extensiones reales y actualizar los enlaces correspondientes.
 
 ## 4. Requisitos técnicos
 
@@ -105,7 +108,7 @@ Resultado esperado:
 {"mensaje":"Asistente de Evaluación Regulatoria activo"}
 ```
 
-La URL `localhost` solo es accesible desde el equipo donde se ejecuta Docker; no es un enlace público para el profesor.
+La URL `localhost` solo es accesible desde el equipo donde se ejecuta Docker; la ejecución local se acredita mediante las capturas incluidas en el repositorio.
 
 ## 6. Integración de la API
 
@@ -188,7 +191,7 @@ Se realizaron pruebas manuales sobre el endpoint `POST /evaluar` mediante Swagge
 
 ## 8. Evidencias
 
-Las capturas se encuentran en la [carpeta `Evidencias/`](Evidencias/). Allí se documentan las pruebas manuales y los componentes técnicos de la ejecución local.
+Las capturas de las pruebas manuales y de la ejecución local se encuentran en la [carpeta `Evidencias/`](Evidencias/).
 
 | Evidencia | Qué acredita | Archivo |
 |---|---|---|
@@ -197,7 +200,7 @@ Las capturas se encuentran en la [carpeta `Evidencias/`](Evidencias/). Allí se 
 | 8 | Contenedor activo con puerto 8000 publicado | [Contenedor en ejecución](Evidencias/08_contenedor_ejecucion.png) |
 | 9 | Swagger mostrando `GET /` y `POST /evaluar` | [Integración API](Evidencias/09_integracion_api_swagger.png) |
 
-> Antes de la entrega, verificar que los nueve archivos estén efectivamente en el repositorio, que los enlaces abran y que las capturas de pruebas se correspondan con las descripciones de la matriz. Las seis capturas no necesariamente representan una prueba distinta cada una; la matriz refleja los siete escenarios reportados durante la ejecución.
+Las seis capturas de pruebas documentan parte de las ejecuciones realizadas; la matriz recoge los siete escenarios evaluados y sus resultados reportados.
 
 ## 9. Manual de despliegue en la nube: Google Cloud Run
 

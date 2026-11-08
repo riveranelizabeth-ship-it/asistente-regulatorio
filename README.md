@@ -46,7 +46,7 @@ asistente-regulatorio/
 ├── requirements.txt
 ├── entrenar_modelo.py        # si se incluye el script utilizado
 ├── modelo_regulatorio.pkl    # necesario para ejecutar el servicio
-└── evidencias/
+└── Evidencias/
     ├── Evidencia 1 ... 6     # capturas de pruebas; conservar extensiones reales
     ├── 07_imagen_docker.png
     ├── 08_contenedor_ejecucion.png
@@ -188,14 +188,14 @@ Se realizaron pruebas manuales sobre el endpoint `POST /evaluar` mediante Swagge
 
 ## 8. Evidencias
 
-Las capturas se encuentran en la [carpeta `evidencias/`](evidencias/). Allí se documentan las pruebas manuales y los componentes técnicos de la ejecución local.
+Las capturas se encuentran en la [carpeta `Evidencias/`](Evidencias/). Allí se documentan las pruebas manuales y los componentes técnicos de la ejecución local.
 
 | Evidencia | Qué acredita | Archivo |
 |---|---|---|
-| 1 a 6 | Capturas de pruebas realizadas mediante la API | [Consultar carpeta](evidencias/) |
-| 7 | Imagen Docker creada y disponible localmente | [Imagen Docker](evidencias/07_imagen_docker.png) |
-| 8 | Contenedor activo con puerto 8000 publicado | [Contenedor en ejecución](evidencias/08_contenedor_ejecucion.png) |
-| 9 | Swagger mostrando `GET /` y `POST /evaluar` | [Integración API](evidencias/09_integracion_api_swagger.png) |
+| 1 a 6 | Capturas de pruebas realizadas mediante la API | [Consultar carpeta](Evidencias/) |
+| 7 | Imagen Docker creada y disponible localmente | [Imagen Docker](Evidencias/07_imagen_docker.png) |
+| 8 | Contenedor activo con puerto 8000 publicado | [Contenedor en ejecución](Evidencias/08_contenedor_ejecucion.png) |
+| 9 | Swagger mostrando `GET /` y `POST /evaluar` | [Integración API](Evidencias/09_integracion_api_swagger.png) |
 
 > Antes de la entrega, verificar que los nueve archivos estén efectivamente en el repositorio, que los enlaces abran y que las capturas de pruebas se correspondan con las descripciones de la matriz. Las seis capturas no necesariamente representan una prueba distinta cada una; la matriz refleja los siete escenarios reportados durante la ejecución.
 
